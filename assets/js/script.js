@@ -55,7 +55,7 @@ function updateColors()
     currHr = hrTest
   }
   // iterate through normal 9 to 5 
-  for (var i = 9; i < 18; i++)
+  for (var i = 9; i < 23; i++)
   {
 
     // assign past class to the div
