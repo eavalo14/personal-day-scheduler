@@ -88,7 +88,7 @@ function updateColors()
 function updateSavedData()
 {
 
-  for (var i = 9; i < 18; i++)
+  for (var i = 9; i < 23; i++)
   {
     // dyamically update hour
     var id = 'hour-' + String(i)
@@ -141,6 +141,7 @@ function processButton(event)
 {
     // extract id of parent
     var id = $(this).parent()[0].id    
+    console.log(id)
     // save data to local storage
     var textEvent = $(this).parent().children().eq(1).val();
     // create data object
