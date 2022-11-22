@@ -94,18 +94,10 @@ function updateSavedData()
     var id = 'hour-' + String(i)
     // grab text object saved in local storage
     var text = JSON.parse(localStorage.getItem(id))
-    console.log(text)
-    // if (text.search('\n'))
-    // {
-    //   console.log("new line")
-    //   console.log(text)
-    //   // text.replace("\n", "<br>")
-    // }
     // check if id saved is in local storage
     if (text !== null)
     {
       // append data into textarea
-      // console.log($('#' + id).children('textarea')[0])
       $('#' + id).children('textarea')[0].textContent = text.textEvent
     }
   }
